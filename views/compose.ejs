@@ -1,0 +1,40 @@
+<%- include('partials/header') %>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/compose.css">
+    <title>Inform</title>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <p class="navbar-brand">USISEME</p>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <!-- 6 -->
+                <li id="home"><a href="/posts" style="color: blue; font-size:2rem">GO BACK</a></li>
+                <li id="about"><a href="/" style="font-size:2rem">HOME</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<body>
+<div class="container">
+    <h1>Compose</h1>
+
+    <form action="/compose" method="post">
+        <div class="mb-3">
+            <h3><label>What should we call you?</label></h3>
+            <input class="form-control" type="text" name="tag" autocomplete="off">
+            <h3><label>Fun Fact</label></h3>
+            <textarea class="form-control" type="text" name="fact" rows=10 cols=30 autocomplete="off"></textarea>
+        </div>
+
+        <button class="btn btn-lg btn-primary" type="submit" name="new">Publish</button>
+    </form>
+</div>
+<div class="footer-padding"></div>
+<div class="footer">
+    <p>Made with ❤️ by IceBerg Inc.</p>
+</div>
+</div>
+</body>
+</html>

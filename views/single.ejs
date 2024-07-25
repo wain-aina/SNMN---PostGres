@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+<link href="css/single.css" rel="stylesheet">
+<title>Document</title>
+</head>
+<body>
+
+<div class="blog_post">
+    <div class="img_pod">
+        <img src="images/emoji.jpg" alt="random image">
+    </div>
+    <div class="container_copy">
+        <h3><%=day%></h3>
+        <h1><%=title%></h1>
+        <p><%=content %></p>
+        <a class="btn_primary" href='/posts'>
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
